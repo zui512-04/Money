@@ -3276,6 +3276,37 @@ document
 
 loadData();
 
+
+/* ==================================================
+   PWA SERVICE WORKER
+================================================== */
+
+if ("serviceWorker" in navigator) {
+
+    window.addEventListener("load", () => {
+
+        navigator.serviceWorker
+            .register("./service-worker.js?v=2")
+            .then(() => {
+
+                console.log(
+                    "AA. 分帳神器 PWA 已啟用"
+                );
+
+            })
+            .catch(error => {
+
+                console.log(
+                    "PWA 啟用失敗：",
+                    error
+                );
+
+            });
+
+    });
+
+}
+
 </script>
 
 </body>
