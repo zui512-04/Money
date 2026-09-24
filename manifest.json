@@ -1,14 +1,15 @@
 {
   "name": "AA. 分帳神器",
-  "short_name": "AA分帳",
+  "short_name": "AA.分帳",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#8fa8e8",
-  "theme_color": "#8fa8e8",
+  "background_color": "#82a8e5",
+  "theme_color": "#82a8e5",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "icon.png",
-      "sizes": "1024x1024",
+      "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     }
